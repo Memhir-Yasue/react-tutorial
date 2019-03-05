@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>REACT! REACT! REACT!!!</title>
+
+    <!-- allows React to work at DOM level -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <!-- core React -->
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <!-- converts jfx to something the browser can understand -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <style>
+      #container {
+        padding: 50px;
+        background-color: #EEE;
+      }
+      #container h1 {
+        font-size: 144px;
+        font-family: sans-serif;
+        color: #729dac;
+      }
+    </style>
+
+
+
+  </head>
+  <body>
+    <div id="container"></div>
+    <script type="text/babel"> // need type="text/babel" to display HTML !
+    /*
+     The ReactDOM.render() function gets content printed on browser
+     Two arugments...
+          # 1. the content you want to print (jsx)
+          # 2. the element you want to print the content to
+    */
+    var destination = document.querySelector("#container")
+    ReactDOM.render(
+      /* first arugment */
+      <h1>Memhr YasuE!</h1>,
+      /* second arugment */
+      destination
+    );
+    </script>
+  </body>
+
+</html>
